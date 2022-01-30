@@ -19,4 +19,12 @@ class Address {
         city = json['city'],
         zipcode = json['zipcode'],
         geolocation = json['geo'];
+
+  Map<String, dynamic> toJson() => {
+        'street': street,
+        'suite': suite,
+        'city': city,
+        'zipcode': zipcode,
+        'geo': geolocation,
+      };
 }
